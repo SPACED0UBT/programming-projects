@@ -11,7 +11,7 @@ if x == 1:
 myint=7
 print(myint)
 
-#print floating points (descimals)
+#print floating points (decimals)
 myfloat=7.0
 print(myfloat)
 myfloat=float(7)
@@ -46,8 +46,7 @@ two=2
 hello="hello"
 #print(one+two+hello)
 #this will!
-print(one+two)
-print(hello)
+print(one+two,hello)
 
 # change this code
 mystring = hello
@@ -67,9 +66,9 @@ mylist=[]
 mylist.append(1)
 mylist.append(2)
 mylist.append(3)
-print(mylist[0]) #prints 1, first entry
-print(mylist[1]) #prints 2, second entry
-print(mylist[2]) #prints 3, third entry
+print(mylist[0]) #prints 1, zero index
+print(mylist[1]) #prints 2, first index
+print(mylist[2]) #prints 3, second entry
 #Querying entries that don't exist will cause errors
 #print(mylist[3])
 
@@ -88,8 +87,7 @@ numbers.append(2)
 numbers.append(3)
 strings.append(hello)
 strings.append(world)
-second_name = print([""])
-
+second_name=(names[1])
 
 # this code should write out the filled arrays and the second name in the names list (Eric).
 print(numbers)
