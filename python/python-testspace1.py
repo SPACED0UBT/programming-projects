@@ -107,3 +107,42 @@ squared=7**2
 cubed=2**3
 print(squared)
 print(cubed)
+
+#you can use operators with strings
+helloworld = "hello" + " " + "world"
+print (helloworld)
+
+#you can multiply word strings 
+lotsofhellos = "hello"*10
+print(lotsofhellos)
+
+#you can join lists with operators
+even_numbers = [0,2,4,6,8]
+odd_numbers=[1,3,5,7,9]
+all_numbers=odd_numbers+even_numbers
+print(all_numbers)
+
+#you can multiply lists
+print([1,2,3]*3)
+
+#exercise to create 10 x and 10 y variables
+#also make a big list by mixing the x and y lists
+
+x=object()
+y=object()
+
+x_list=[x]*10
+y_list=[y]*10
+big_list=x_list+y_list
+
+print("x_list contains %d objects" % len(x_list))
+print("y_list contains %d objects" % len(y_list))
+print("big_list contains %d objects" % len(big_list))
+
+# testing code
+if x_list.count(x) == 10 and y_list.count(y) == 10:
+    print("Almost there...")
+if big_list.count(x) == 10 and big_list.count(y) == 10:
+    print("Great!")
+
+# https://www.learnpython.org/en/String_Formatting
