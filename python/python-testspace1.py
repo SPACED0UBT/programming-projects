@@ -145,4 +145,9 @@ if x_list.count(x) == 10 and y_list.count(y) == 10:
 if big_list.count(x) == 10 and big_list.count(y) == 10:
     print("Great!")
 
-# https://www.learnpython.org/en/String_Formatting
+#python uses C-style string formatting to create strings
+#the "%" operator can format variable sets in a "tuple" (fixed size list)
+#together with a format string to contain normal text with "argment specifiers"
+#i.e %s and %d
+
+#this prints out "Hello, John!"
