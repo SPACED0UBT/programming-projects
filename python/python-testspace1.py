@@ -113,7 +113,7 @@ helloworld = "hello" + " " + "world"
 print (helloworld)
 
 #you can multiply word strings 
-lotsofhellos = "hello"*10
+lotsofhellos = "hello "*10
 print(lotsofhellos)
 
 #you can join lists with operators
