@@ -156,7 +156,7 @@ if big_list.count(x) == 10 and big_list.count(y) == 10:
 name = "John"
 print("Hello, %s!" % name)
 
-#you can use multiple argument specifierls using a tuple
+#you can use multiple argument specifiers using a tuple
 #this prints out "John is 23 years old."
 name = "John"
 age = 23
@@ -183,5 +183,25 @@ print("A list: %s" % mylist)
 #This should print "Hello John Doe. Your current balance is $53.44
 data = ("John", "Doe", 53.44)
 format_string = "Hello"
+first=data[0]
+last=data[1]
+balance=data[2]
 
-print("format_string, %s . Your current balance is $ %f" % (data))
+print("%s, %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
+
+#Strings can be defined as anything between quotes
+astring = "Hello world!"
+astring2 = 'Hello world'
+
+#You can use single quotes to assign a string. You may face problems if the value inside also has single quotes.
+#Here is a work around using double quotes
+print("single quotes are ' '")
+
+#this is the total count of characters in astring
+print (len(astring))
+
+#this is the location of the first 'o' in astring. index starts with the zeroth index as the first position.
+print (astring.index("o"))
+
+#this counts the number of l's in the string
+print(astring.count("1"))
