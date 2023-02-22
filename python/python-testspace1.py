@@ -191,6 +191,7 @@ print("%s, %s %s. Your current balance is $%.2f." % (format_string, first, last,
 
 #Strings can be defined as anything between quotes
 astring = "Hello world!"
+
 astring2 = 'Hello world'
 
 #You can use single quotes to assign a string. You may face problems if the value inside also has single quotes.
@@ -205,3 +206,5 @@ print (astring.index("o"))
 
 #this counts the number of l's in the string
 print(astring.count("1"))
+
+l1
