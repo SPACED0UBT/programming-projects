@@ -187,7 +187,7 @@ first=data[0]
 last=data[1]
 balance=data[2]
 
-print("%s, %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
+print("%s %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
 
 #Strings can be defined as anything between quotes
 astring = "Hello world!"
@@ -201,10 +201,11 @@ print("single quotes are ' '")
 #this is the total count of characters in astring
 print (len(astring))
 
-#this is the location of the first 'o' in astring. index starts with the zeroth index as the first position.
+#this is the location of the first 'o' in astring. it only counts to the first match. 
+#index starts with the zeroth index as the first position.
 print (astring.index("o"))
 
 #this counts the number of l's in the string
-print(astring.count("1"))
+print(astring.count("l"))
 
-l1
+# l1
