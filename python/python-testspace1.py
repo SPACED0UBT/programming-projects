@@ -208,4 +208,5 @@ print (astring.index("o"))
 #this counts the number of l's in the string
 print(astring.count("l"))
 
-# l1
+# install MesloLGS NF font to work machine
+# https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
