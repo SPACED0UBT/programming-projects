@@ -207,3 +207,5 @@ print (astring.index("o"))
 
 #this counts the number of l's in the string
 print(astring.count("l"))
+
+# https://www.learnpython.org/en/Basic_String_Operations
