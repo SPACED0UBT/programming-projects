@@ -189,9 +189,10 @@ balance=data[2]
 
 print("%s %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
 
+# https://www.learnpython.org/en/Basic_String_Operations
+
 #Strings can be defined as anything between quotes
 astring = "Hello world!"
-
 astring2 = 'Hello world'
 
 #You can use single quotes to assign a string. You may face problems if the value inside also has single quotes.
@@ -208,4 +209,24 @@ print (astring.index("o"))
 #this counts the number of l's in the string
 print(astring.count("l"))
 
-# https://www.learnpython.org/en/Basic_String_Operations
+#this prints the characters from index 3 to index 6 - for addition/subtraction reasons
+print(astring[3:7])
+
+#this prints the characters from index 3 -> end
+print(astring[3:])
+
+#this prints the characters from index 6 <- start
+print(astring[:7])
+
+#this prints the characters at index 3 : index N-1 from the end (-N)
+print(astring[3:-3])
+
+# extended slice syntax
+# this prints from index 3 to index 6, skipping every other character
+print(astring[3:7:2])
+print(astring[1:14:2])
+
+#this prints the characters of string from 3 to 7 skipping one character
+print(astring[3:7])
+print(astring[3:7:1])
+
