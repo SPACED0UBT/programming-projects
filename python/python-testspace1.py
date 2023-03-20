@@ -278,9 +278,42 @@ if s.startswith("Str"):
 if s.endswith("ome!"):
     print("String ends with 'ome!'. Good!")
 
-# Split the string into three separate strings,
-# each containing only a word
+# Split the string into three separate strings, each containing only a word
 print("Split the words of the string: %s" % s.split(" "))
 
 # Conditions
 # https://www.learnpython.org/en/Conditions
+
+# Python uses boolean logic to evaluate conditions. Results should be true or false
+x = 2
+print(x == 2) # prints out True (== means is)
+print(x == 3) # prints out False
+print(x < 3) # prints out True (< less than)
+# not equals is !=
+
+# You can make more complex expressions with "and" and "or" operators
+name = "John"
+age = 23
+if name == "John" and age == 23:
+    print("Your name is John, and you are also 23 years old.")
+
+if name == "John" or name == "Rick":
+    print("Your name is either John or Rick.")
+
+# You can use the "in" operator to check if a variable exists in an "iterable object container"
+name = "John"
+if name in ["John", "Rick"]:
+    print("Your name is either John or Rick.")
+
+# Python uses indents instead of brackets to define code blocks. Usually a tab is 4 spaces, although any consistent size will work.
+statement = False
+different_statement = True
+if statement is True:
+    # do something
+    pass
+elif different_statement is True: # else if
+    # do something else
+    pass
+else:
+    # do another thing
+    pass
