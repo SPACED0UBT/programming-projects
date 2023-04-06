@@ -1,4 +1,8 @@
-#print text
+# Welcome to Python! Here is the record of your journey learning the world of programming.
+
+# https://www.learnpython.org/en/Hello%2C_World%21
+
+# #print text
 print("Hello World!")
 
 #print a variable
@@ -6,18 +10,28 @@ x = 1
 if x == 1:
     # indented four spaces
     print ("x is 1.")
-##############################
-#print integers
+
+
+# https://www.learnpython.org/en/Variables_and_Types
+# Variables and types
+
+# Python is completely object oriented, and not "statically typed".
+# You do not need to declare variables before using them, or declare their type.
+# Every variable in Python is an object.
+
+# Python supports two kinds of numbers: integers and floating point(decimal)
+
+# print integers
 myint=7
 print(myint)
 
-#print floating points (decimals)
+# print floating points (decimals)
 myfloat=7.0
 print(myfloat)
 myfloat=float(7)
 print(myfloat)
 
-#print strings in quotes, double quotes allow easy use of apostrophes.
+# print strings in quotes, double quotes allow easy use of apostrophes.
 mystring='hello'
 print(mystring)
 mystring="hello"
@@ -25,13 +39,13 @@ print(mystring)
 mystring=("Don't worry about apostrophes.")
 print(mystring)
 
-#you can use operators on numbers and strings
+# you can use operators on numbers and strings
 one=1
 two=2
 three=one+two
 print(three)
 
-#you can use operators on strings and integers
+# you can use operators on strings and integers
 hello="hello"
 world="world"
 helloworld= hello+" "+world
@@ -40,12 +54,12 @@ print(helloworld)
 a, b= 3, 4
 print(a, b)
 
-#this will not work! you can't mix numbers and strings while operating
+# this will not work! you can't mix numbers and strings while operating
 one=1
 two=2
 hello="hello"
-#print(one+two+hello)
-#this will!
+# print(one+two+hello)
+# this will!
 print(one+two,hello)
 
 # change this code
@@ -60,8 +74,11 @@ if isinstance(myfloat, float) and myfloat == 10.0:
     print("Float: %f" % myfloat)
 if isinstance(myint, int) and myint == 20:
     print("Integer: %d" % myint)
-##########################################
-#Lists can contain multiple entries and kinds of variables
+
+# https://www.learnpython.org/en/Lists
+# Lists
+
+# Lists can contain multiple entries and kinds of variables
 mylist=[]
 mylist.append(1)
 mylist.append(2)
@@ -69,10 +86,10 @@ mylist.append(3)
 print(mylist[0]) #prints 1, zero index
 print(mylist[1]) #prints 2, first index
 print(mylist[2]) #prints 3, second entry
-#Querying entries that don't exist will cause errors
-#print(mylist[3])
+# Querying entries that don't exist will cause errors
+# print(mylist[3])
 
-#print out 1,2,3
+# print out 1,2,3
 for x in mylist:
     print(x)
 
@@ -94,6 +111,9 @@ print(numbers)
 print(strings)
 print("The second name on the names list is %s" % second_name)
 
+# https://www.learnpython.org/en/Basic_Operators
+# Basic operators
+
 # operators can be used on numbers
 number=1+2*3/4.0
 print(number) #respects order of operation
@@ -102,31 +122,31 @@ print(number) #respects order of operation
 remainder=11 % 3
 print (remainder)
 
-#if you use two "*" you do an exponential operation
+# if you use two "*" you do an exponential operation
 squared=7**2
 cubed=2**3
 print(squared)
 print(cubed)
 
-#you can use operators with strings
+# you can use operators with strings
 helloworld = "hello" + " " + "world"
 print (helloworld)
 
-#you can multiply word strings 
+# you can multiply word strings
 lotsofhellos = "hello "*10
 print(lotsofhellos)
 
-#you can join lists with operators
+# you can join lists with operators
 even_numbers = [0,2,4,6,8]
 odd_numbers=[1,3,5,7,9]
 all_numbers=odd_numbers+even_numbers
 print(all_numbers)
 
-#you can multiply lists
+# you can multiply lists
 print([1,2,3]*3)
 
-#exercise to create 10 x and 10 y variables
-#also make a big list by mixing the x and y lists
+# exercise to create 10 x and 10 y variables
+# also make a big list by mixing the x and y lists
 
 x=object()
 y=object()
@@ -147,23 +167,23 @@ if big_list.count(x) == 10 and big_list.count(y) == 10:
 
 # https://www.learnpython.org/en/String_Formatting
 
-#python uses C-style string formatting to create strings
-#the "%" operator can format variable sets in a "tuple" (fixed size list)
-#together with a format string to contain normal text with "argment specifiers"
-#i.e %s and %d
+# python uses C-style string formatting to create strings
+# the "%" operator can format variable sets in a "tuple" (fixed size list)
+# together with a format string to contain normal text with "argment specifiers"
+# i.e %s and %d
 
-#this prints out "Hello, John!"
+# this prints out "Hello, John!"
 name = "John"
 print("Hello, %s!" % name)
 
-#you can use multiple argument specifiers using a tuple
-#this prints out "John is 23 years old."
+# you can use multiple argument specifiers using a tuple
+# this prints out "John is 23 years old."
 name = "John"
 age = 23
 print("%s is %d years old" % (name, age))
 
-#a non-string object can be formatted using the %s operator as well.
-#it will return with the "repr" method
+# a non-string object can be formatted using the %s operator as well.
+# it will return with the "repr" method
 # This prints out: A list: [1, 2, 3]
 mylist = [1,2,3]
 print("A list: %s" % mylist)
@@ -180,7 +200,7 @@ print("A list: %s" % mylist)
 
 ## %x/%X - Integers in hex representation (lowercase/uppercase)
 
-#This should print "Hello John Doe. Your current balance is $53.44
+# This should print "Hello John Doe. Your current balance is $53.44
 data = ("John", "Doe", 53.44)
 format_string = "Hello"
 first=data[0]
@@ -191,28 +211,28 @@ print("%s %s %s. Your current balance is $%.2f." % (format_string, first, last, 
 
 # https://www.learnpython.org/en/Basic_String_Operations
 
-#Strings can be defined as anything between quotes
+# Strings can be defined as anything between quotes
 astring = "Hello world!"
 astring2 = 'Hello world'
 
-#You can use single quotes to assign a string. You may face problems if the value inside also has single quotes.
-#Here is a work around using double quotes
+# You can use single quotes to assign a string. You may face problems if the value inside also has single quotes.
+# Here is a work around using double quotes
 print("single quotes are ' '")
 
-#this is the total count of characters in astring
+# this is the total count of characters in astring
 print (len(astring))
 
-#this is the location of the first 'o' in astring. it only counts to the first match. 
-#index starts with the zeroth index as the first position.
+# this is the location of the first 'o' in astring. it only counts to the first match.
+# index starts with the zeroth index as the first position.
 print (astring.index("o"))
 
-#this counts the number of l's in the string
+# this counts the number of l's in the string
 print(astring.count("l"))
 
-#this prints the characters from index 3 to index 6 - for addition/subtraction reasons
+# this prints the characters from index 3 to index 6 - for addition/subtraction reasons
 print(astring[3:7])
 
-#this prints the characters from index 3 -> end
+# this prints the characters from index 3 -> end
 print(astring[3:])
 
 #this prints the characters from index 6 <- start
@@ -305,7 +325,8 @@ name = "John"
 if name in ["John", "Rick"]:
     print("Your name is either John or Rick.")
 
-# Python uses indents instead of brackets to define code blocks. Usually a tab is 4 spaces, although any consistent size will work.
+# Python uses indents instead of brackets to define code blocks.
+# Usually a tab is 4 spaces, although any consistent size will work.
 statement = False
 different_statement = True
 if statement is True:
@@ -317,3 +338,69 @@ elif different_statement is True: # else if
 else:
     # do another thing
     pass
+# This is a generalized boolean string's flow.
+# Here's a more concrete example.
+x = 2
+if x == 2:
+    print("x equals two!")
+else:
+    print("x does not equal to two.")
+
+# A statement is "true" if one of these conditions is met:
+#    1. The "True" boolean variable is given
+#    2. The "True" boolean variable is calculated using an expression like arithmetic comparison.
+#    3. An object which is not considered "empty" is passed.
+#        Empty Objects:
+#        1. An empty string ""
+#        2. An empty list []
+#        3. The number zero: 0
+#        4. The false boolean variable: false
+
+# The "is" operator doesn't match the value of the variables like the double equals operator"==". It matches each instance.
+x = [1,2,3]
+y = [1,2,3]
+print(x == y) # Prints out True
+print(x is y) # Prints out False
+
+# "Not" inverts a boolean expression
+print(not False) # Prints out True
+print((not False) == (False)) # Prints out False
+
+# Exercise
+# Change the variables so each statement is True
+# change this code
+number = 20
+second_number = 0
+first_array = [1,0,1]
+second_array = [2,3]
+
+if number > 15:
+    print("1")
+
+if first_array:
+    print("2")
+
+if len(second_array) == 2:
+    print("3")
+
+if len(first_array) + len(second_array) == 5:
+    print("4")
+
+if first_array and first_array[0] == 1:
+    print("5")
+
+if not second_number:
+    print("6")
+
+#  Loops  
+#  https://www.learnpython.org/en/Loops
+
+# There are two types of loops for python, "for" and "while".
+# "for" loops iterate over a given sequence
+
+primes = [2, 3, 5, 7]
+for prime in primes:
+    print(prime)
+
+# For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. The difference between range and xrange is that the range function returns a new list with numbers of that specified range, whereas xrange returns an iterator, which is more efficient. (Python 3 uses the range function, which acts like xrange). Note that the range function is zero based.
+
