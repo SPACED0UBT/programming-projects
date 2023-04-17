@@ -2,6 +2,8 @@
 
 # https://www.learnpython.org/en/Hello%2C_World%21
 
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
 # #print text
 print("Hello World!")
 
@@ -14,6 +16,8 @@ if x == 1:
 
 # https://www.learnpython.org/en/Variables_and_Types
 # Variables and types
+
+print("Variables and Types")
 
 # Python is completely object oriented, and not "statically typed".
 # You do not need to declare variables before using them, or declare their type.
@@ -78,6 +82,8 @@ if isinstance(myint, int) and myint == 20:
 # https://www.learnpython.org/en/Lists
 # Lists
 
+print("Lists")
+
 # Lists can contain multiple entries and kinds of variables
 mylist=[]
 mylist.append(1)
@@ -113,6 +119,8 @@ print("The second name on the names list is %s" % second_name)
 
 # https://www.learnpython.org/en/Basic_Operators
 # Basic operators
+
+print("Basic Operators")
 
 # operators can be used on numbers
 number=1+2*3/4.0
@@ -167,6 +175,8 @@ if big_list.count(x) == 10 and big_list.count(y) == 10:
 
 # https://www.learnpython.org/en/String_Formatting
 
+print("String Formatting")
+
 # python uses C-style string formatting to create strings
 # the "%" operator can format variable sets in a "tuple" (fixed size list)
 # together with a format string to contain normal text with "argment specifiers"
@@ -210,6 +220,8 @@ balance=data[2]
 print("%s %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
 
 # https://www.learnpython.org/en/Basic_String_Operations
+
+print("Basic String")
 
 # Strings can be defined as anything between quotes
 astring = "Hello world!"
@@ -304,6 +316,8 @@ print("Split the words of the string: %s" % s.split(" "))
 # Conditions
 # https://www.learnpython.org/en/Conditions
 
+print("Conditions")
+
 # Python uses boolean logic to evaluate conditions. Results should be true or false
 x = 2
 print(x == 2) # prints out True (== means is)
@@ -395,6 +409,8 @@ if not second_number:
 #  Loops  
 #  https://www.learnpython.org/en/Loops
 
+print("Loops")
+
 # There are two types of loops for python, "for" and "while".
 # "for" loops iterate over a given sequence
 
@@ -402,5 +418,53 @@ primes = [2, 3, 5, 7]
 for prime in primes:
     print(prime)
 
-# For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. The difference between range and xrange is that the range function returns a new list with numbers of that specified range, whereas xrange returns an iterator, which is more efficient. (Python 3 uses the range function, which acts like xrange). Note that the range function is zero based.
+# For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. 
+# The difference between range and xrange is that the range function returns a new list with numbers of that specified range.
+# xrange returns an iterator. This is more efficient. (Python 3 uses the range function, which acts like xrange).
+# Note that the range function is zero based.
 
+# Prints out the numbers 0,1,2,3,4
+for x in range(5):
+    print(x)
+
+# Prints out 3,4,5
+for x in range(3,6):
+    print (x)
+
+# Prints out 3,5,7
+for x in range(3, 8, 2):
+    print(x)
+
+# I don't get this range section
+
+# "while" loops
+
+# "while" loops repeat as long as a  certain boolean condition is met.
+
+# Prints out 0,1,2,3,4
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1  # This is the same as count = count + 1
+
+# "break" and "continue" statements
+# "break" and "continue" statements are used for loops.
+# "break" is to exit a "for" loop or "while" loop.
+# "continue" is for skipping the current block, and return to "for" or "while" statement.
+
+# Prints out 0,1,2,3,4
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+
+# Prints out only odd numbers - 1,3,5,7,9
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
