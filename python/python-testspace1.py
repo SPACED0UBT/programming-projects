@@ -6,7 +6,7 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 # #print text
 print("Hello World!")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 #print a variable
 x = 1
 if x == 1:
@@ -16,9 +16,9 @@ if x == 1:
 
 # https://www.learnpython.org/en/Variables_and_Types
 # Variables and types
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Variables and Types")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # Python is completely object oriented, and not "statically typed".
 # You do not need to declare variables before using them, or declare their type.
 # Every variable in Python is an object.
@@ -81,9 +81,9 @@ if isinstance(myint, int) and myint == 20:
 
 # https://www.learnpython.org/en/Lists
 # Lists
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Lists")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # Lists can contain multiple entries and kinds of variables
 mylist=[]
 mylist.append(1)
@@ -119,9 +119,9 @@ print("The second name on the names list is %s" % second_name)
 
 # https://www.learnpython.org/en/Basic_Operators
 # Basic operators
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Basic Operators")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # operators can be used on numbers
 number=1+2*3/4.0
 print(number) #respects order of operation
@@ -174,9 +174,9 @@ if big_list.count(x) == 10 and big_list.count(y) == 10:
     print("Great!")
 
 # https://www.learnpython.org/en/String_Formatting
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("String Formatting")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # python uses C-style string formatting to create strings
 # the "%" operator can format variable sets in a "tuple" (fixed size list)
 # together with a format string to contain normal text with "argment specifiers"
@@ -220,9 +220,9 @@ balance=data[2]
 print("%s %s %s. Your current balance is $%.2f." % (format_string, first, last, balance))
 
 # https://www.learnpython.org/en/Basic_String_Operations
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Basic String")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # Strings can be defined as anything between quotes
 astring = "Hello world!"
 astring2 = 'Hello world'
@@ -315,9 +315,9 @@ print("Split the words of the string: %s" % s.split(" "))
 
 # Conditions
 # https://www.learnpython.org/en/Conditions
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Conditions")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # Python uses boolean logic to evaluate conditions. Results should be true or false
 x = 2
 print(x == 2) # prints out True (== means is)
@@ -408,9 +408,9 @@ if not second_number:
 
 #  Loops  
 #  https://www.learnpython.org/en/Loops
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Loops")
-
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # There are two types of loops for python, "for" and "while".
 # "for" loops iterate over a given sequence
 
