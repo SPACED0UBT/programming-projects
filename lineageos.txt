@@ -1,0 +1,3 @@
+boot loader unlock - 3CE911BF17FBED56
+phone version - xq-bq62
+phone development name - pdx214
