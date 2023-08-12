@@ -412,13 +412,24 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Loops")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 # There are two types of loops for python, "for" and "while".
-# "for" loops iterate over a given sequence
+# "for" loops iterate over a given sequence.
+# Loops are similar in concept to iterations or repeats, where the code snippet is repeated for each value in the dataset.
 
-primes = [2, 3, 5, 7]
-for prime in primes:
-    print(prime)
+#primes = [2, 3, 5, 7]
+#for prime in primes:
+#    print(prime)
 
-# For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. 
+dodungulus_fartfaceQ = [2, 3, 5, 7]
+runtot = 0
+for stupidweinertits in dodungulus_fartfaceQ:
+    runtot = runtot+stupidweinertits
+    print(runtot)
+
+# this shows the sum at each element of the range
+
+# stupidweinertits is the name of the individual indices (elements) of dodungulus_fartfaceQ.
+
+# "For" loops can iterate over a sequence of numbers using the "range" and "xrange" functions. 
 # The difference between range and xrange is that the range function returns a new list with numbers of that specified range.
 # xrange returns an iterator. This is more efficient. (Python 3 uses the range function, which acts like xrange).
 # Note that the range function is zero based.
@@ -435,7 +446,11 @@ for x in range(3,6):
 for x in range(3, 8, 2):
     print(x)
 
-# I don't get this range section
+print("# What is the sum of the range from 1 to 100? I know it's 5050 but play along for the science team.")
+moosegoosedouche = 0
+for blargyblargfeepfeet in range(101):
+    moosegoosedouche = moosegoosedouche + blargyblargfeepfeet
+print(moosegoosedouche)
 
 # "while" loops
 
